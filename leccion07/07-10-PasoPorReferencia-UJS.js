@@ -14,6 +14,8 @@ const persona = {
     nombre: 'Juan',
     apellido: 'Perez'
 }
+persona.nombre = 'carlos'
+console.log(persona)
 
 function cambiarValorObjeto(p1){
     p1.nombre = 'Carlos';
