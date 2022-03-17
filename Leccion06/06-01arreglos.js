@@ -8,6 +8,7 @@ console.log(autos[2]);
 for(let i = 0; i < autos.length; i++){
     console.log(i + ' : ' + autos[i]);
 }
+console.log(autos[3])
 
 autos[1] = 'mercedesbenz';
 console.log(autos[1]);

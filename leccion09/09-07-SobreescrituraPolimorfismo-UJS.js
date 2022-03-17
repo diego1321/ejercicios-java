@@ -25,6 +25,12 @@ class Persona{
         //o de tipo hijo
         return this.nombreCompleto();
     }
+    static saludar(){
+       console.log( ' saludos desde metodo static');
+    }
+    static saludar2(persona){
+     console.log(persona.nombre + ' ' + persona.apellido);
+    }
 }
 
 class Empleado extends Persona{
@@ -51,3 +57,10 @@ let empleado1 = new Empleado('Maria', 'Jimenez', 'Sistemas');
 console.log( empleado1 );
 console.log( empleado1.nombreCompleto() );
 console.log( empleado1.toString());
+
+//persona1.saludar(); no es posible llamar un metodo static desde un objeto
+Persona.saludar();
+Persona.saludar2(persona1)
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);

@@ -1,4 +1,4 @@
-class Persona{
+ class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre; 
         this._apellido = apellido;
